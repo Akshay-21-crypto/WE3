@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>objectPassing</title>
+    </head>
+    <body>
+        <h1>Passing Object</h1>
+        <script>
+            class Student
+            {
+                constructor(name,age,gpa)
+                {
+                    this.name=name;
+                    this.age=age;
+                    this.gpa=gpa;
+                }
+            }
+            function printStudent(s)
+            {
+                console.log(s.name);
+                console.log(s.age);
+                console.log(s.gpa);
+            }
+            var s1=new Student("ak",20,9.5);
+            printStudent(s1);
+        </script>
+    </body>
+</html>
